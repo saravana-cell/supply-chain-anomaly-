@@ -32,7 +32,7 @@ This project bridges deep technical complexity with tangible business outcomes â
 # datasets
 https://huggingface.co/datasets/infinite-dataset-hub/InventoryAnomalies?utm_source
 
-#**Technologies used in this project**
+# Technologies used in this project
 ğŸ— Data Ingestion & Streaming
 Apache Kafka
 For real-time ingestion of shipment updates, inventory levels, and external alerts via Kafka topics.
