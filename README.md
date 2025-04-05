@@ -33,7 +33,7 @@ This project bridges deep technical complexity with tangible business outcomes �
 https://huggingface.co/datasets/infinite-dataset-hub/InventoryAnomalies?utm_source
 
 # Technologies used in this project
-🏗 Data Ingestion & Streaming
+1. Data Ingestion & Streaming
 Apache Kafka
 For real-time ingestion of shipment updates, inventory levels, and external alerts via Kafka topics.
 
@@ -43,7 +43,7 @@ Used for batch ingestion from a MySQL-based warehouse inventory database into HD
 Kafka Producers (Scala / Python)
 Custom data generators simulate IoT feeds and API inputs.
 
-⚡ Big Data Processing
+2. Big Data Processing
 Apache Spark (Structured Streaming & Core)
 Processes real-time data streams with support for batch joins and window-based aggregations.
 
@@ -53,35 +53,35 @@ Used for querying, filtering, and detecting anomalies with expressive SQL over s
 Scala
 Primary language for developing Spark streaming applications.
 
-🗄️ Storage & Data Lake
+🗄3. Storage & Data Lake
 Hadoop HDFS
 Stores historical warehouse and shipment data for batch processing and enrichment of live streams.
 
 Parquet / Text Formats
 Data formats used for efficient storage and retrieval from HDFS.
 
-🧪 Anomaly Detection Logic
+3.Anomaly Detection Logic
 Custom Business Rules (Spark SQL + Scala)
 Logic for detecting delays, stockouts, abnormal routes, etc.
 
 Kafka Topic: anomaly_events
 Dedicated stream for identified anomalies.
 
-🧩 Microservices & APIs
+3. Microservices & APIs
 Spring Boot (Java)
 REST APIs to expose anomaly alerts, integrate with external systems, and trigger resolutions.
 
 Apache Kafka Consumer (Java)
 Reads from anomaly_events for real-time downstream processing.
 
-📈 Visualization & Monitoring
+4. Visualization & Monitoring
 Grafana / Kibana (optional)
 Dashboards for tracking KPIs like delivery anomalies, inventory trends, and system health.
 
 Spark UI & Kafka Monitoring Tools
 For job performance and stream lag diagnostics.
 
-🧰 DevOps & Support Tools
+5. DevOps & Support Tools
 Docker
 For local development of Kafka, Zookeeper, Spark, and Hadoop clusters.
 
@@ -98,5 +98,12 @@ Icons and visuals for this stack (great for slides!)
 A simplified version for a resume line
 
 A breakdown of the cloud-native version of this stack (AWS/GCP/Azure)
+# Summary of Key Libraries
 
+Component-Libraries/Tools Used
+Streaming & ETL-spark-core, spark-sql, spark-streaming, kafka-clients
+Kafka Integration-spark-streaming-kafka-0-10, spring-kafka, kafka-python
+Data Ingestion-Sqoop, MySQL JDBC
+Monitoring (Optional)-Grafana, Prometheus, Spark UI
+Dev Tools	Docker, Git, Postman
     
